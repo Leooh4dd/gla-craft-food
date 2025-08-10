@@ -87,8 +87,6 @@ if st.button("Calcular"):
         linhas.append(f"{ing.ljust(max_len)} : {qtd}x")
 
     st.subheader(f"Ingredientes para {quantidade}x {comida}:")
+    st.write(f"{total_custo/1000:.2f}K Berries")
     
     st.code("\n".join(linhas), language='text')
-
-    st.subheader("💰 Custo total:")
-    st.write(f"{total_custo/1000:.2f}K Berries")
