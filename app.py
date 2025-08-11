@@ -36,6 +36,46 @@ precos_ingredientes = {
 }
 
 receitas = {
+    "Atum Grelhado": {
+        "ingredientes": {
+            "Azeite": 2,
+            "Limão": 2,
+            "Alho": 2,
+            "Atum": 5,
+            "Pimenta": 2,
+            "Folhas Verdes": 2,
+            "Alface": 4,
+            "Vinho Branco": 1,
+            "Manteiga": 2
+        },
+        "imagem": "images/atum_grelhado.png"
+    },
+    "Espetinho de Polvo": {
+        "ingredientes": {
+            "Polvo Cru": 3,
+            "Sal": 4,
+            "Pimenta": 1,
+            "Azeite": 2,
+            "Cebola": 1,
+            "Alho": 2
+        },
+        "imagem": "images/espetinho_de_polvo.png"
+    },
+    "Carne de Cordeiro": {
+        "ingredientes": {
+            "Carne de Cordeiro Crua": 1,
+            "Sal": 2,
+            "Azeite": 3,
+            "Folhas Verdes": 2,
+            "Cebola": 2,
+            "Alho": 2,
+            "Cogumelo": 2,
+            "Limão": 1,
+            "Vinho Branco": 1,
+            "Trufa Branca": 1
+        },
+        "imagem": "images/carne_de_cordeiro.png"
+    },
     "Frango Teriyaki": {
         "ingredientes": {
             "Galinha": 5,
@@ -46,7 +86,7 @@ receitas = {
             "Folhas Verdes": 3,
             "Alho": 3,
             "Trufa Branca": 3,
-            "Creme de Leite": 3,
+            "Creme de Leite": 3
         },
         "imagem": "images/frango_teriyaki.png"
     },
