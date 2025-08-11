@@ -131,7 +131,10 @@ if st.button("Calcular"):
     st.subheader(f"Ingredientes para {quantidade}x {comida}:")
     st.write(f"Custo total: **{total_custo/1000:.2f}K Berries**")
     
-    for ing, qtd in total_ingredientes.items():
+    ingredientes_ordenados = [ing for ing in precos_ingredientes.keys() if ing in total_ingredientes]
+    
+    for ing in ingredientes_ordenados:
+        qtd = total_ingredientes[ing]
         col1, col2, col3 = st.columns([0.1, 0.4, 1])
         
         with col1:
