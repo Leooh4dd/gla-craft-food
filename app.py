@@ -65,6 +65,7 @@ receitas = {
         "ingredientes": {
             "Carne de Cordeiro Crua": 1,
             "Sal": 2,
+            "Pimenta": 1,
             "Azeite": 3,
             "Folhas Verdes": 2,
             "Cebola": 2,
