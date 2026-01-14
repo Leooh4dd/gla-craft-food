@@ -1,4 +1,5 @@
 import streamlit as st
+import math
 
 precos_ingredientes = {
     "Bife Cru Premium": {"preco": 200, "imagem": "images/bife.png"},
@@ -133,10 +134,11 @@ if st.button("Calcular"):
     st.write(f"Custo total: **{total_custo/1000:.2f}K Berries**")
     
     ingredientes_ordenados = [ing for ing in precos_ingredientes.keys() if ing in total_ingredientes]
-    
+    slot_list = []
+
     for ing in ingredientes_ordenados:
         qtd = total_ingredientes[ing]
-        col1, col2, col3 = st.columns([0.1, 0.4, 1])
+        col1, col2, col3, col4 = st.columns([0.1, 0.4, 1, 1])
         
         with col1:
             st.image(precos_ingredientes[ing]["imagem"], width=30)
@@ -146,3 +148,9 @@ if st.button("Calcular"):
         
         with col3:
             st.markdown(f"**{qtd}x**")
+
+        el_slot = math.ceil(qtd/100)
+        slot_list.append(el_slot)
+
+    total_slots = sum(slot_list)
+    st.write(f"Slots totais: **{total_slots}**")
