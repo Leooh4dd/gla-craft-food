@@ -77,6 +77,21 @@ receitas = {
         },
         "imagem": "images/carne_de_cordeiro.png"
     },
+    "Polvo Grelhado": {
+        "ingredientes": {
+            "Polvo Cru": 5,
+            "Sal": 4,
+            "Azeite": 2,
+            "Cebola": 2,
+            "Alho": 2,
+            "Queijo": 3,
+            "Folhas Verdes": 3,
+            "Tomates": 6,
+            "Creme de Leite": 3,
+            "Trufa Branca": 1
+        },
+        "imagem": "images/polvo_grelhado.png"
+    },
     "Frango Teriyaki": {
         "ingredientes": {
             "Galinha": 5,
